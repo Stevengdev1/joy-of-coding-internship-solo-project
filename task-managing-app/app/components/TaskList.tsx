@@ -7,12 +7,12 @@ type Task = {
     dueDate: string;
 };
 
-// This code below defines the props type for the TaskList component
+// This code below defines the TaskList component props, which is an array of Tasks.
 type TaskListProps = {
     tasks: Task[];
   };
   
-// TaskList is a functional component that displays a list of tasks.
+// TaskList is a functional React component that displays a list of tasks.
 // This expects an array of task objects passed in via the `tasks` prop.
   const TaskList: React.FC<TaskListProps> = ({ tasks }) => {
     return (
